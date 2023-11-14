@@ -5,7 +5,7 @@ import Allcountries from './components/Allcountries/allcountries';
 
 import './App.css';
 import CountryInfo from './components/countryinfo/countryInfo';
-import Grid from './components/Grid/grid';
+import Search from './components/Search/search';
 
 function App() {
   return (
@@ -15,20 +15,17 @@ function App() {
         <h1>Zara's Tour</h1>
 
       </div>
-    </div>
-    {/* <div className="image">
-      <img src="/Image/clo"/>
-    </div> */}
-    <Router>
-      <Routes>
-      <Route exact path="/"element={Allcountries}  ></Route>
-      <Route exact path="/country/countryInfo"element={<CountryInfo/>}  ></Route>
+
+
       
 
-      </Routes>
+    </div>
+   
+<Allcountries/>
 
-    </Router>
-    <Grid/>
+<Search/>
+
+
       </>
    
   );
