@@ -1,6 +1,21 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
+
+padding:10px;
+margin:10px;
+
+h2{
+    padding:20px;
+    color:white;
+}
+
+input{
+    padding:20px;
+    border-radius:10px;
+    width:100%;
+}
+
 `
 
 // export const Wrapper = styled.div`

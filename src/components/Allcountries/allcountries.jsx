@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
-import { Card, Data, Image,  Top,  Wrapper } from "./allcountries.style";
+import { Banner, Card, Data, Image,  Top,  Wrapper } from "./allcountries.style";
+
 
 
 
@@ -35,7 +36,9 @@ const Allcountries=()=>{
           
            <Wrapper>
                
+             
                {data ? (
+                   <Banner>
                    <ol>
                        {data.map((country, index) =>
                        <Top>
@@ -47,9 +50,9 @@ const Allcountries=()=>{
                        <Data>
                            <li key={index}>
                                <h3>{country.name.common}</h3>
-                               <p>Area:{country.area} square kilometers</p>
-                               <p>Capital:{country.capital}</p>
-                               <p>Continent:{country.continents}</p>
+                               <h6>Area:{country.area} square kilometers</h6>
+                               <h6>Capital:{country.capital}</h6>
+                               <h6>Continent:{country.continents}</h6>
                               
 
 
@@ -66,6 +69,7 @@ const Allcountries=()=>{
                        
                        
                    </ol>
+                   </Banner>
                ) : (
                    <p>Loading...</p>
                )}

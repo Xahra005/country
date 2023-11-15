@@ -10,9 +10,11 @@ import Search from './components/Search/search';
 function App() {
   return (
     <>
+    <div className='app'>
       <div className="header">
         <div className="container">
-        <h1>Zara's Tour</h1>
+        <h1>Zara's Tour   _____Where in the world</h1>
+        
 
       </div>
 
@@ -20,10 +22,16 @@ function App() {
       
 
     </div>
-   
-<Allcountries/>
+    <Search/>
+    <CountryInfo/>
+    <Allcountries/>
+  </div>
+    
 
-<Search/>
+
+
+
+
 
 
       </>

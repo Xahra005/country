@@ -4,43 +4,45 @@ import styled from 'styled-components';
 
 
 export const Wrapper = styled.div`
-display:flex;
-flex-wrap:wrap;
-column-gap:2rem;
-row-gap:2rem;
-border:ipx solid;
-flex-basis:50%;
-justify-content:center;
-align-items:space-between;
-
+p{
+    padding-bottom:50px
+   
+}
 
 
 
 
 `;
+export const Banner = styled.div`
+
+
+
+ol{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    column-gap:2rem;
+    row-gap:2rem;
+    align-items:center;
+}
+
+`;
 
 export const Top = styled.div`
-display:flex;
-flex-wrap:wrap;
-column-gap:2rem;
-row-gap:2rem;
-border:ipx solid;
-flex-basis:50%;
-justify-content:center;
-align-items:space-between;
-flex-direction:row;
-
 
 
 `
 
 export const  Card= styled.div`
-width:250px;
+width:100%;
 padding:20px;
-border-radius:5px;
+border-radius:10px;
 background-color:hsl(209,23%,22%);
 color:white;
 
+h6{
+    padding:10px;
+}
 
 
 

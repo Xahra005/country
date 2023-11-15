@@ -1,6 +1,8 @@
+import axios from "axios";
 import React from "react";
 import { useEffect } from "react";
 import { useState } from "react";
+import { Data, Wrapper } from "./countryInfo.styles";
 
 
 const CountryInfo =()=>{
@@ -25,9 +27,9 @@ const CountryInfo =()=>{
 
         <Wrapper>
                
-               {data ? (
+               {info ? (
                    <ol>
-                       {data.map((country, index) =>
+                       {info.map((country, index) =>
                        
 
                        
@@ -38,27 +40,14 @@ const CountryInfo =()=>{
                                <p>Capital:{country.capital}</p>
                                <p>Continent:{country.continents}</p>
                                <p> Population:{country.population}</p>
-                               
-                              
-
-
 
                            </li>
                            </Data>
-
-
-
                        )}
-                       
-                       
-                       
                    </ol>
                ) : (
                    <p>Loading...</p>
                )}
-
-
-        
            </Wrapper>
            )
        
